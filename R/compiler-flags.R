@@ -28,14 +28,14 @@ compiler_flags <- function(debug = FALSE) {
       )
     } else if (debug) {
       c(
-        CFLAGS = "-UNDEBUG -Wall -pedantic -g -O0",
-        CXXFLAGS = "-UNDEBUG -Wall -pedantic -g -O0",
-        CXX11FLAGS = "-UNDEBUG -Wall -pedantic -g -O0",
-        CXX14FLAGS = "-UNDEBUG -Wall -pedantic -g -O0",
-        CXX17FLAGS = "-UNDEBUG -Wall -pedantic -g -O0",
-        CXX20FLAGS = "-UNDEBUG -Wall -pedantic -g -O0",
-        FFLAGS = "-g -O0",
-        FCFLAGS = "-g -O0"
+        CFLAGS = "-UNDEBUG -Wall -pedantic -g -O1",
+        CXXFLAGS = "-UNDEBUG -Wall -pedantic -g -O1",
+        CXX11FLAGS = "-UNDEBUG -Wall -pedantic -g -O1",
+        CXX14FLAGS = "-UNDEBUG -Wall -pedantic -g -O1",
+        CXX17FLAGS = "-UNDEBUG -Wall -pedantic -g -O1",
+        CXX20FLAGS = "-UNDEBUG -Wall -pedantic -g -O1",
+        FFLAGS = "-g -O1",
+        FCFLAGS = "-g -O1"
       )
     } else {
       c(
